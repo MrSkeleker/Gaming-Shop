@@ -1,7 +1,8 @@
-import './App.scss';
-import { Homepage } from './homepage/homepage.component';
+import { Directory } from 'components/directory/directory.component';
 
-const App = () => {
+import './home.styles.scss';
+
+export const Home = () => {
 	const categories = [
 		{
 			id: 1,
@@ -30,11 +31,5 @@ const App = () => {
 		},
 	];
 
-	return (
-		<div className='App'>
-			<Homepage categories={categories} />
-		</div>
-	);
+	return (<Directory categories={categories} />)
 };
-
-export default App;
